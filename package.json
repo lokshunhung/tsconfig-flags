@@ -1,0 +1,9 @@
+{
+    "name": "tsconfig-flags",
+    "version": "0.0.1",
+    "license": "MIT",
+    "private": true,
+    "devDependencies": {
+        "typescript": "4.6.3"
+    }
+}
