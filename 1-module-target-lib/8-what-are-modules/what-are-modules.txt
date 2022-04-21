@@ -5,7 +5,7 @@ JavaScript - originally running inside browsers only
     <button type="button" onclick="handleClick()">Click me</button>
     <script>
     var count = 0;
-    function handleClick() { console.log("clicked " + count + " times!"); }
+    function handleClick() { console.log("clicked " + ++count + " times!"); }
     </script>
 </body>
 </html>
