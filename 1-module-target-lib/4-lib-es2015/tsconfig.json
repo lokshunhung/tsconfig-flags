@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        // Don't use any module system
+        "module": "None",
+
+        // Don't transform my code
+        "target": "ESNext",
+
+        // Include language features up to ES2015 (also includes ES3, ES5)
+        "lib": ["ES2015"]
+    }
+}
