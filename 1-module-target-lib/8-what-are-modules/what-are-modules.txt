@@ -1,0 +1,78 @@
+JavaScript - originally running inside browsers only
+
+<html>
+<body>
+    <button type="button" onclick="handleClick()">Click me</button>
+    <script>
+    var count = 0;
+    function handleClick() { console.log("clicked " + count + " times!"); }
+    </script>
+</body>
+</html>
+
+You can see "count", "handleClick" are defined in the global scope.
+(you can view them in browser console via "console.log(window.count);")
+
+
+---
+
+
+Having everything global -> 🫠 (name collision, no scoping, etc)
+
+
+So people made their own module systems:
+- AMD, CommonJS, RequireJS, SystemJS, ...
+  The JS server runtime, NodeJS, uses CommonJS
+
+
+And then TypeScript was invented, and they made their own module system:
+- Namespaces  
+  (The guy who developed TS, Anders Hejlsberg, is C# lead architect)
+
+
+And then JavaScript finally introduced ECMAScript Modules (esm) in ES2015
+
+
+So we have many module systems, but you probably only need to understand:
+- CommonJS (cjs)
+- ES Modules (esm)
+
+
+---
+
+
+Why learn CJS:
+- Usually what you see in NodeJS
+- Using Webpack to bundle for browser, the output looks like CJS (but attached on browser global environment)
+
+
+Why learn ESM:
+- You should write code in ESM, and transpile to other module systems
+- Better modern tooling support
+- In the future (~ 5-10 years), hopefully we can use ESM only
+
+
+NodeJS:
+- Ecosystem moving to ESM, but slowly  
+  (Usually libraries offer dual module system support)
+- Using ESM has lots of rough edges  
+  (eg missing functionality,
+      many features behind flags,
+      some major libraries not yet fully supported -> like Jest)
+
+
+Browser:
+- Modern browsers supports ESM
+- Usually you have to support more than evergreen browsers,  
+  and "differential loading" is very painful to do correctly
+  (using some more network resource on users' end is an acceptable tradeoff)
+
+
+---
+
+
+Note:
+
+Choosing the module system with "module" in tsconfig.json
+is not related to the choice of "lib" (what features to be included)
+and the choice of "target" (which language version to transform output to)
