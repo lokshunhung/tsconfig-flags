@@ -1,0 +1,18 @@
+Language versions
+"ES3"    - in 1999, JSON standard based on this version
+"ES5"    - in 2009, if need to support IE target this (the 4th version is killed)
+"ES2015" - in 2015, sometimes referred as "ES6" (it's the 6th version)
+         every year there's a new version, so "ES2016", "ES2017", ...
+"ESNext" - the "next" version of ECMAScript (may not be "officially" released)
+
+Language features
+- are added into versions through a 5 stage process
+- process regulated by the TC39 committee
+- features usually push forward by people with a seat in the committee, called "champions"
+
+The TC39 Process (5 stages), see https://tc39.es/process-document/ latest proposals: https://github.com/tc39/proposals
+"Stage 0" - allow input into spec
+"Stage 1" - additions? shape of solution? potential challenges?
+"Stage 2" - syntax? semantics?
+"Stage 3" - sorta stable, reviewers signed off spec
+"Stage 4" - implementations available, will be added to next language version
