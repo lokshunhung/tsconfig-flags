@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        // Don't use any module system
+        "module": "None",
+
+        // Don't transform my code
+        "target": "ESNext",
+
+        // Include browser api
+        "lib": ["DOM"]
+    }
+}
